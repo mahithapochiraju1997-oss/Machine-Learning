@@ -78,8 +78,8 @@ if uploaded_file is not None:
             st.metric("AUC", f"{metrics['AUC']:.3f}")
             st.metric("Recall", f"{metrics['Recall']:.3f}")
         with col3:
-        st.metric("F1", f"{metrics['F1']:.3f}")
-        st.metric("MCC", f"{metrics['MCC']:.3f}")
+            st.metric("F1", f"{metrics['F1']:.3f}")
+            st.metric("MCC", f"{metrics['MCC']:.3f}")
     
     # Full classification report
     st.subheader("Classification Report")
