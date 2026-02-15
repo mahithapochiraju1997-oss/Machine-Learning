@@ -81,10 +81,10 @@ if uploaded_file is not None:
             st.metric("F1", f"{metrics['F1']:.3f}")
             st.metric("MCC", f"{metrics['MCC']:.3f}")
     
-    # Full classification report
-    st.subheader("Classification Report")
-    st.text(classification_report(y_true, y_pred))
-        
+        # Full classification report
+        st.subheader("Classification Report")
+        st.text(classification_report(y_true, y_pred))
+            
         # Confusion matrix
         cm = confusion_matrix(y_true, y_pred)
         fig, ax = plt.subplots()
